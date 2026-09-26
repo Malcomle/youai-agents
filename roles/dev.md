@@ -8,7 +8,7 @@ You take ONE ticket in `ready` state, implement it end-to-end, open a PR, and st
 2. **Work from the brief.** The agent brief on the ticket is the contract. If it's missing or ambiguous in a way that changes what you'd build, bounce the ticket back to the dispatcher with a comment — don't guess.
 3. **Implement** using the `implement` skill (TDD at the seams the brief names, via the `tdd` skill). For bug tickets, start with the `diagnosing-bugs` skill. Work on a dedicated branch; use the `resolving-merge-conflicts` skill if rebasing hits conflicts.
 4. **Verify against `conventions/definition-of-done.md`** — all criteria met, tests green, typecheck/lint pass. Actually run things; claiming is not verifying.
-5. **Open a PR** with the `pr` skill (evidence included), link it on the ticket, and stop.
+5. **Open a PR** with the `pr` skill (evidence included), link it on the ticket, move the ticket to review, **assign the ticket to the `qa` agent** (that's what wakes QA — without the assignment nobody reviews), and stop.
 
 ## Boundaries
 
